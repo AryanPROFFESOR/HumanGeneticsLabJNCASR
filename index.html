@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HMG Lab - Human Molecular Genetics Laboratory</title>
+    <meta name="description" content="Human Molecular Genetics Laboratory at JNCASR - Research in genetic variation and disease">
+
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header-container">
+            <div class="logo-section">
+                <a href="index.html" style="display: flex; align-items: center; gap: 1.5rem; text-decoration: none;">
+                    <img src="assets/images/logo/logojnc.png" alt="HMG Lab Logo" class="logo-img" 
+                         onclick="event.stopPropagation(); window.open('https://www.jncasr.ac.in/', '_blank'); return false;">
+                    <div class="logo-text">
+                        <h1>HMG Lab</h1>
+                        <p>JNCASR Bengaluru</p>
+                    </div>
+                </a>
+            </div>
+
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+
+            <nav id="mainNav">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="research.html" class="nav-link">
+                            Research
+                            <span class="dropdown-arrow">▼</span>
+                        </a>
+                        <div class="dropdown">
+                            <a href="research/rna-surveillance.html" class="dropdown-item">RNA Surveillance Mechanisms</a>
+                            <a href="research/cell-cycle.html" class="dropdown-item">Cell Cycle & Ciliopathies</a>
+                            <a href="research/protein-trafficking.html" class="dropdown-item">Protein Trafficking & Autophagy</a>
+                            <a href="research/splicing-chromatin.html" class="dropdown-item">Splicing & Chromatin Biology</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="team.html" class="nav-link">
+                            Team
+                            <span class="dropdown-arrow">▼</span>
+                        </a>
+                        <div class="dropdown">
+                            <a href="team.html" class="dropdown-item">Members</a>
+                            <a href="alumni.html" class="dropdown-item">Alumni</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="publications.html" class="nav-link">Publications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="news.html" class="nav-link">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION WITH TSPARTICLES -->
+    <section class="hero" id="home">
+        <div id="tsparticles"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Human Molecular Genetics Laboratory</h1>
+            <p>Understanding Genetic Variation and Disease</p>
+            <p class="hero-subtitle">Cutting-edge research in computational and experimental genetics</p>
+            <a href="about.html" class="hero-btn">Learn More About Us</a>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <section style="padding: 4rem 2rem; text-align: center; max-width: 1400px; margin: 0 auto;">
+            <h2>Welcome to HMG Lab</h2>
+            <p style="max-width: 800px; margin: 2rem auto; font-size: 1.1rem; color: var(--text-gray);">
+                The Human Molecular Genetics Laboratory at JNCASR is dedicated to understanding 
+                the molecular mechanisms underlying human genetic variation and disease.
+            </p>
+            
+            <div class="quick-links" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                <a href="research.html" class="quick-link-card">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🔬</div>
+                    <h3>Our Research</h3>
+                    <p>Explore our research areas</p>
+                </a>
+                <a href="team.html" class="quick-link-card">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">👥</div>
+                    <h3>Our Team</h3>
+                    <p>Meet our researchers</p>
+                </a>
+                <a href="publications.html" class="quick-link-card">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">📚</div>
+                    <h3>Publications</h3>
+                    <p>View our latest work</p>
+                </a>
+                <a href="contact.html" class="quick-link-card">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">📧</div>
+                    <h3>Contact Us</h3>
+                    <p>Get in touch</p>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About HMG Lab</h3>
+                <p>The Human Molecular Genetics Laboratory is dedicated to advancing understanding of genetic variation and its role in human disease through innovative research and collaborative science.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <p><a href="index.html">Home</a></p>
+                <p><a href="research.html">Research</a></p>
+                <p><a href="team.html">Team</a></p>
+                <p><a href="publications.html">Publications</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <p>Email: lab@jncasr.ac.in</p>
+                <p>Phone: 080 2208 2712</p>
+                <p>JNCASR, Bengaluru</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Human Molecular Genetics Laboratory, JNCASR. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- tsParticles Library -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+    <script src="assets/js/particles-config.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/interactions.js"></script>
+</body>
+</html>

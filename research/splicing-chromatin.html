@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splicing & Chromatin Biology - HMG Lab</title>
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/layout.css">
+    <link rel="stylesheet" href="../assets/css/animations.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <style>
+        body { animation: fadeIn 0.5s ease-in; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-section">
+                <a href="../index.html" style="display: flex; align-items: center; gap: 1.5rem; text-decoration: none;">
+                    <img src="../assets/images/logo/logojnc.png" alt="HMG Lab Logo" class="logo-img" onclick="event.stopPropagation(); window.open('https://www.jncasr.ac.in/', '_blank'); return false;">
+                    <div class="logo-text"><h1>HMG Lab</h1><p>JNCASR Bengaluru</p></div>
+                </a>
+            </div>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+            <nav id="mainNav">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="../about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="../research.html" class="nav-link active">Research <span class="dropdown-arrow">▼</span></a>
+                        <div class="dropdown">
+                            <a href="rna-surveillance.html" class="dropdown-item">RNA Surveillance Mechanisms</a>
+                            <a href="cell-cycle.html" class="dropdown-item">Cell Cycle & Ciliopathies</a>
+                            <a href="protein-trafficking.html" class="dropdown-item">Protein Trafficking & Autophagy</a>
+                            <a href="splicing-chromatin.html" class="dropdown-item active">Splicing & Chromatin Biology</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="../team.html" class="nav-link">Team <span class="dropdown-arrow">▼</span></a>
+                        <div class="dropdown">
+                            <a href="../team.html" class="dropdown-item">Members</a>
+                            <a href="../alumni.html" class="dropdown-item">Alumni</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="../publications.html" class="nav-link">Publications</a></li>
+                    <li class="nav-item"><a href="../news.html" class="nav-link">News</a></li>
+                    <li class="nav-item"><a href="../contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h2>Splicing & Chromatin Biology</h2>
+            
+            <div class="research-detail">
+                <div class="research-text">
+                    <h3>Investigating Chromatin Association and Transcriptional Regulatory Functions of Novel Factors</h3>
+                    <p>This research area focuses on understanding whether specific proteins or genes of interest play a role in chromatin biology or transcriptional regulation. A central objective is to determine whether these factors function as transcription factors, chromatin-associated proteins, or modulators of gene expression through interactions with chromatin architecture.</p>
+
+                    <p>By using Chromatin Immunoprecipitation followed by sequencing (ChIP-seq), genome-wide binding profiles are generated to determine whether these factors associate with chromatin, bind regulatory elements such as promoters or enhancers, or function as transcription factors. The binding data are integrated with transcriptomic and epigenomic information to assess correlations with gene expression and chromatin states.</p>
+
+                    <p>This approach helps identify whether the factors act directly on DNA or modulate chromatin structure indirectly. The ultimate goal is to reveal novel mechanisms of gene regulation and chromatin dynamics with potential implications in development and disease.</p>
+                </div>
+                <div class="research-image">
+                    <img src="../assets/images/research/chromatin.jpg" alt="Chromatin Biology Research" onerror="this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;color:#999;font-style:italic;\'>Research Image</div>';">
+                </div>
+            </div>
+
+            <div class="research-detail reverse" style="margin-top: 4rem;">
+                <div class="research-text">
+                    <h3>RNA Splicing Mechanisms and Gene Regulation</h3>
+                    <p>Alternative splicing is a fundamental mechanism that enables cells to generate protein diversity from a limited number of genes, playing critical roles in development, cellular differentiation, and disease. Our research investigates the molecular mechanisms governing splice site recognition, spliceosome assembly, and the regulatory networks that control tissue-specific and context-dependent splicing patterns.</p>
+
+                    <p>We employ genome-wide approaches including RNA-seq and CLIP-seq to map splicing landscapes and identify regulatory elements that influence splice site selection. By integrating computational predictions with experimental validation, we characterize splicing factors and their target transcripts, revealing how aberrant splicing contributes to human disease, particularly neurological disorders and cancer.</p>
+
+                    <p>Understanding the interplay between splicing machinery, chromatin modifications, and transcriptional regulation provides insights into how cells coordinate gene expression programs. Our work aims to identify novel splicing regulators and therapeutic targets for diseases caused by splicing defects.</p>
+                </div>
+                <div class="research-image">
+                    <img src="../assets/images/research/splicing.jpg" alt="RNA Splicing Research" onerror="this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;color:#999;font-style:italic;\'>Research Image</div>';">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section"><h3>About HMG Lab</h3><p>The Human Molecular Genetics Laboratory is dedicated to advancing understanding of genetic variation and its role in human disease.</p></div>
+            <div class="footer-section"><h3>Quick Links</h3><p><a href="../index.html">Home</a></p><p><a href="../research.html">Research</a></p><p><a href="../team.html">Team</a></p><p><a href="../publications.html">Publications</a></p></div>
+            <div class="footer-section"><h3>Connect With Us</h3><p>Email: lab@jncasr.ac.in</p><p>Phone: 080 2208 2712</p><p>JNCASR, Bengaluru</p></div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2025 Human Molecular Genetics Laboratory, JNCASR. All rights reserved.</p></div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/animations.js"></script>
+    <script src="../assets/js/interactions.js"></script>
+</body>
+</html>

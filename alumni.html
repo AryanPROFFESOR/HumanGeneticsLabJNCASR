@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni - HMG Lab</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <style>
+        body { animation: fadeIn 0.5s ease-in; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-section">
+                <a href="index.html" style="display: flex; align-items: center; gap: 1.5rem; text-decoration: none;">
+                    <img src="assets/images/logo/logojnc.png" alt="HMG Lab Logo" class="logo-img" onclick="event.stopPropagation(); window.open('https://www.jncasr.ac.in/', '_blank'); return false;">
+                    <div class="logo-text"><h1>HMG Lab</h1><p>JNCASR Bengaluru</p></div>
+                </a>
+            </div>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+            <nav id="mainNav">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="research.html" class="nav-link">Research <span class="dropdown-arrow">▼</span></a>
+                        <div class="dropdown">
+                            <a href="research/rna-surveillance.html" class="dropdown-item">RNA Surveillance Mechanisms</a>
+                            <a href="research/cell-cycle.html" class="dropdown-item">Cell Cycle & Ciliopathies</a>
+                            <a href="research/protein-trafficking.html" class="dropdown-item">Protein Trafficking & Autophagy</a>
+                            <a href="research/splicing-chromatin.html" class="dropdown-item">Splicing & Chromatin Biology</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="team.html" class="nav-link">Team <span class="dropdown-arrow">▼</span></a>
+                        <div class="dropdown">
+                            <a href="team.html" class="dropdown-item">Members</a>
+                            <a href="alumni.html" class="dropdown-item active">Alumni</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="publications.html" class="nav-link">Publications</a></li>
+                    <li class="nav-item"><a href="news.html" class="nav-link">News</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="alumni">
+            <h2>Our Alumni</h2>
+            <p>Our accomplished alumni have gone on to make significant contributions to genetics research and industry worldwide.</p>
+
+            <div class="alumni-grid">
+                <!-- Alumni 1 -->
+                <div class="alumni-card">
+                    <div class="alumni-image-container">
+                        <img src="assets/images/alumiimage/pkraju.jpeg" alt="P K Raju Peddabhatyarasimhuni" class="alumni-image"
+                             onerror="this.onerror=null; this.style.display='none'; this.parentElement.innerHTML='<div style=\'width:120px;height:120px;background:rgba(139,69,19,0.2);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--accent);font-size:3rem;font-weight:700;\'>PR</div>';">
+                    </div>
+                    <div class="alumni-info">
+                        <h3>Dr. P K Raju Peddabhatyarasimhuni</h3>
+                        <p class="alumni-degree">PhD 2015</p>
+                        <p class="alumni-institution">McGill University</p>
+                    </div>
+                </div>
+
+                <!-- Alumni 2 -->
+                <div class="alumni-card">
+                    <div class="alumni-image-container">
+                        <img src="assets/images/alumiimage/kalpita.jpeg" alt="Kalpita Rashmi Karan" class="alumni-image"
+                             onerror="this.onerror=null; this.style.display='none'; this.parentElement.innerHTML='<div style=\'width:120px;height:120px;background:rgba(139,69,19,0.2);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--accent);font-size:3rem;font-weight:700;\'>KK</div>';">
+                    </div>
+                    <div class="alumni-info">
+                        <h3>Dr. Kalpita Rashmi Karan</h3>
+                        <p class="alumni-degree">PhD 2015</p>
+                        <p class="alumni-institution">Weill Cornell Medicine</p>
+                    </div>
+                </div>
+
+                <!-- Alumni 3 - No Image -->
+                <div class="alumni-card">
+                    <div class="alumni-image-container no-image">
+                        <div style="width:120px;height:120px;background:rgba(139,69,19,0.2);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--accent);font-size:3rem;font-weight:700;">MK</div>
+                    </div>
+                    <div class="alumni-info">
+                        <h3>Dr. Manpreet Kaur</h3>
+                        <p class="alumni-degree">PhD 2016</p>
+                        <p class="alumni-institution">Clevergene</p>
+                    </div>
+                </div>
+
+                <!-- Alumni 4 -->
+                <div class="alumni-card">
+                    <div class="alumni-image-container">
+                        <img src="assets/images/alumiimage/shalini.jpeg" alt="Shalini Roy Choudhury" class="alumni-image"
+                             onerror="this.onerror=null; this.style.display='none'; this.parentElement.innerHTML='<div style=\'width:120px;height:120px;background:rgba(139,69,19,0.2);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--accent);font-size:3rem;font-weight:700;\'>SR</div>';">
+                    </div>
+                    <div class="alumni-info">
+                        <h3>Dr. Shalini Roy Choudhury</h3>
+                        <p class="alumni-degree">PhD 2019</p>
+                        <p class="alumni-institution">University of Cambridge</p>
+                    </div>
+                </div>
+
+                <!-- Alumni 5 -->
+                <div class="alumni-card">
+                    <div class="alumni-image-container">
+                        <img src="assets/images/alumiimage/pooja.jpeg" alt="Pooja Barak" class="alumni-image"
+                             onerror="this.onerror=null; this.style.display='none'; this.parentElement.innerHTML='<div style=\'width:120px;height:120px;background:rgba(139,69,19,0.2);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--accent);font-size:3rem;font-weight:700;\'>PB</div>';">
+                    </div>
+                    <div class="alumni-info">
+                        <h3>Dr. Pooja Barak</h3>
+                        <p class="alumni-degree">PhD 2022</p>
+                        <p class="alumni-institution">SymboR</p>
+                    </div>
+                </div>
+
+                <!-- Alumni 6 -->
+                <div class="alumni-card">
+                    <div class="alumni-image-container">
+                        <img src="assets/images/alumiimage/sambhavi.jpeg" alt="Sambhavi Puri" class="alumni-image"
+                             onerror="this.onerror=null; this.style.display='none'; this.parentElement.innerHTML='<div style=\'width:120px;height:120px;background:rgba(139,69,19,0.2);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--accent);font-size:3rem;font-weight:700;\'>SP</div>';">
+                    </div>
+                    <div class="alumni-info">
+                        <h3>Dr. Sambhavi Puri</h3>
+                        <p class="alumni-degree">PhD 2022</p>
+                        <p class="alumni-institution">Boston University</p>
+                    </div>
+                </div>
+
+                <!-- Alumni 7 -->
+                <div class="alumni-card">
+                    <div class="alumni-image-container">
+                        <img src="assets/images/alumiimage/shveta.jpeg" alt="Shveta Jaichankar" class="alumni-image"
+                             onerror="this.onerror=null; this.style.display='none'; this.parentElement.innerHTML='<div style=\'width:120px;height:120px;background:rgba(139,69,19,0.2);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--accent);font-size:3rem;font-weight:700;\'>SJ</div>';">
+                    </div>
+                    <div class="alumni-info">
+                        <h3>Dr. Shveta Jaichankar</h3>
+                        <p class="alumni-degree">PhD 2022</p>
+                        <p class="alumni-institution">Indiana University Bloomington</p>
+                    </div>
+                </div>
+
+                <!-- Alumni 8 -->
+                <div class="alumni-card">
+                    <div class="alumni-image-container">
+                        <img src="assets/images/alumiimage/ramshank.jpeg" alt="M. Ram Shankar" class="alumni-image"
+                             onerror="this.onerror=null; this.style.display='none'; this.parentElement.innerHTML='<div style=\'width:120px;height:120px;background:rgba(139,69,19,0.2);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--accent);font-size:3rem;font-weight:700;\'>RS</div>';">
+                    </div>
+                    <div class="alumni-info">
+                        <h3>Dr. M. Ram Shankar</h3>
+                        <p class="alumni-degree">PhD 2007</p>
+                        <p class="alumni-institution">UTHealth Houston</p>
+                    </div>
+                </div>
+
+                <!-- Alumni 9 -->
+                <div class="alumni-card">
+                    <div class="alumni-image-container">
+                        <img src="assets/images/alumiimage/aparna.jpeg" alt="Aparna G" class="alumni-image"
+                             onerror="this.onerror=null; this.style.display='none'; this.parentElement.innerHTML='<div style=\'width:120px;height:120px;background:rgba(139,69,19,0.2);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--accent);font-size:3rem;font-weight:700;\'>AG</div>';">
+                    </div>
+                    <div class="alumni-info">
+                        <h3>Dr. Aparna G</h3>
+                        <p class="alumni-degree">PhD 2008</p>
+                        <p class="alumni-institution">Citadel Precision Medicine LLC</p>
+                    </div>
+                </div>
+
+                <!-- Alumni 10 -->
+                <div class="alumni-card">
+                    <div class="alumni-image-container">
+                        <img src="assets/images/alumiimage/rinki.jpeg" alt="Rinki Ratea Priya" class="alumni-image"
+                             onerror="this.onerror=null; this.style.display='none'; this.parentElement.innerHTML='<div style=\'width:120px;height:120px;background:rgba(139,69,19,0.2);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--accent);font-size:3rem;font-weight:700;\'>RP</div>';">
+                    </div>
+                    <div class="alumni-info">
+                        <h3>Dr. Rinki Ratea Priya</h3>
+                        <p class="alumni-degree">PhD 2016</p>
+                        <p class="alumni-institution">Baylor College of Medicine</p>
+                    </div>
+                </div>
+
+                <!-- Alumni 11 -->
+                <div class="alumni-card">
+                    <div class="alumni-image-container">
+                        <img src="assets/images/alumiimage/shrilaxmi.jpeg" alt="Shrilaxmi V Joshi" class="alumni-image"
+                             onerror="this.onerror=null; this.style.display='none'; this.parentElement.innerHTML='<div style=\'width:120px;height:120px;background:rgba(139,69,19,0.2);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--accent);font-size:3rem;font-weight:700;\'>SJ</div>';">
+                    </div>
+                    <div class="alumni-info">
+                        <h3>Dr. Shrilaxmi V Joshi</h3>
+                        <p class="alumni-degree">PhD 2022</p>
+                        <p class="alumni-institution">Ottawa Hospital Research Institute</p>
+                    </div>
+                </div>
+
+                <!-- Alumni 12 -->
+                <div class="alumni-card">
+                    <div class="alumni-image-container">
+                        <img src="assets/images/alumiimage/nishtha.jpeg" alt="Nishtha Pandey" class="alumni-image"
+                             onerror="this.onerror=null; this.style.display='none'; this.parentElement.innerHTML='<div style=\'width:120px;height:120px;background:rgba(139,69,19,0.2);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--accent);font-size:3rem;font-weight:700;\'>NP</div>';">
+                    </div>
+                    <div class="alumni-info">
+                        <h3>Dr. Nishtha Pandey</h3>
+                        <p class="alumni-degree">PhD 2013</p>
+                        <p class="alumni-institution">Centre for Human Genetics (CHG)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section"><h3>About HMG Lab</h3><p>The Human Molecular Genetics Laboratory is dedicated to advancing understanding of genetic variation and its role in human disease.</p></div>
+            <div class="footer-section"><h3>Quick Links</h3><p><a href="index.html">Home</a></p><p><a href="research.html">Research</a></p><p><a href="team.html">Team</a></p><p><a href="publications.html">Publications</a></p></div>
+            <div class="footer-section"><h3>Connect With Us</h3><p>Email: lab@jncasr.ac.in</p><p>Phone: 080 2208 2712</p><p>JNCASR, Bengaluru</p></div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2025 Human Molecular Genetics Laboratory, JNCASR. All rights reserved.</p></div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/interactions.js"></script>
+</body>
+</html>

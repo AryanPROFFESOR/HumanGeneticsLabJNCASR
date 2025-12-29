@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News - HMG Lab</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <style>
+        body { animation: fadeIn 0.5s ease-in; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-section">
+                <a href="index.html" style="display: flex; align-items: center; gap: 1.5rem; text-decoration: none;">
+                    <img src="assets/images/logo/logojnc.png" alt="HMG Lab Logo" class="logo-img" onclick="event.stopPropagation(); window.open('https://www.jncasr.ac.in/', '_blank'); return false;">
+                    <div class="logo-text"><h1>HMG Lab</h1><p>JNCASR Bengaluru</p></div>
+                </a>
+            </div>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+            <nav id="mainNav">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="research.html" class="nav-link">Research <span class="dropdown-arrow">▼</span></a>
+                        <div class="dropdown">
+                            <a href="research/rna-surveillance.html" class="dropdown-item">RNA Surveillance Mechanisms</a>
+                            <a href="research/cell-cycle.html" class="dropdown-item">Cell Cycle & Ciliopathies</a>
+                            <a href="research/protein-trafficking.html" class="dropdown-item">Protein Trafficking & Autophagy</a>
+                            <a href="research/splicing-chromatin.html" class="dropdown-item">Splicing & Chromatin Biology</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="team.html" class="nav-link">Team <span class="dropdown-arrow">▼</span></a>
+                        <div class="dropdown">
+                            <a href="team.html" class="dropdown-item">Members</a>
+                            <a href="alumni.html" class="dropdown-item">Alumni</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="publications.html" class="nav-link">Publications</a></li>
+                    <li class="nav-item"><a href="news.html" class="nav-link active">News</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="news">
+            <h2>Lab News & Updates</h2>
+
+            <div class="news-item">
+                <span class="news-date">December 2025</span>
+                <h3>Grant Award for Genetic Heterogeneity Research</h3>
+                <p>Our laboratory has been awarded a significant research grant to investigate genetic heterogeneity in rare genetic disorders. This funding will support three years of intensive research aimed at identifying novel disease genes and understanding mechanisms of genetic variation in human disease.</p>
+            </div>
+
+            <div class="news-item">
+                <span class="news-date">November 2025</span>
+                <h3>Publication in Human Genetics Journal</h3>
+                <p>Our latest study on genetic mapping and novel locus identification has been published. The research presents findings on a new DFNA locus for hearing loss, expanding our understanding of genetic heterogeneity in nonsyndromic hearing loss disorders.</p>
+            </div>
+
+            <div class="news-item">
+                <span class="news-date">October 2025</span>
+                <h3>Collaborative Research Initiative</h3>
+                <p>We have initiated a new collaborative project with international research institutions to investigate population genetics in South Asian populations. This collaboration will enhance our capacity for large-scale genomic studies and comparative population analysis.</p>
+            </div>
+
+            <div class="news-item">
+                <span class="news-date">September 2025</span>
+                <h3>New Team Members Join Laboratory</h3>
+                <p>We welcome new researchers to our laboratory. Our team now includes postdoctoral fellows, graduate students, and research associates who bring expertise in genomics, bioinformatics, and molecular genetics.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section"><h3>About HMG Lab</h3><p>The Human Molecular Genetics Laboratory is dedicated to advancing understanding of genetic variation and its role in human disease.</p></div>
+            <div class="footer-section"><h3>Quick Links</h3><p><a href="index.html">Home</a></p><p><a href="research.html">Research</a></p><p><a href="team.html">Team</a></p><p><a href="publications.html">Publications</a></p></div>
+            <div class="footer-section"><h3>Connect With Us</h3><p>Email: lab@jncasr.ac.in</p><p>Phone: 080 2208 2712</p><p>JNCASR, Bengaluru</p></div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2025 Human Molecular Genetics Laboratory, JNCASR. All rights reserved.</p></div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/interactions.js"></script>
+</body>
+</html>

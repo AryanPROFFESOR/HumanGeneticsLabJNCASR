@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research - HMG Lab</title>
+    <meta name="description" content="Research areas at Human Molecular Genetics Laboratory">
+
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    
+    <style>
+        body {
+            animation: fadeIn 0.5s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .research-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+            margin-top: 3rem;
+        }
+        
+        .research-box {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 8px;
+            border-top: 4px solid var(--accent);
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+            display: block;
+        }
+        
+        .research-box:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+            border-top-color: var(--accent-light);
+        }
+        
+        .research-icon {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+        
+        .research-box h3 {
+            color: var(--primary-dark);
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+        }
+        
+        .research-box p {
+            color: var(--text-gray);
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+        
+        .read-more {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent);
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: var(--transition);
+        }
+        
+        .research-box:hover .read-more {
+            gap: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header-container">
+            <div class="logo-section">
+                <a href="index.html" style="display: flex; align-items: center; gap: 1.5rem; text-decoration: none;">
+                    <img src="assets/images/logo/logojnc.png" alt="HMG Lab Logo" class="logo-img" 
+                         onclick="event.stopPropagation(); window.open('https://www.jncasr.ac.in/', '_blank'); return false;">
+                    <div class="logo-text">
+                        <h1>HMG Lab</h1>
+                        <p>JNCASR Bengaluru</p>
+                    </div>
+                </a>
+            </div>
+
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+
+            <nav id="mainNav">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item">
+                        <a href="research.html" class="nav-link active">
+                            Research
+                            <span class="dropdown-arrow">▼</span>
+                        </a>
+                        <div class="dropdown">
+                            <a href="research/rna-surveillance.html" class="dropdown-item">RNA Surveillance Mechanisms</a>
+                            <a href="research/cell-cycle.html" class="dropdown-item">Cell Cycle & Ciliopathies</a>
+                            <a href="research/protein-trafficking.html" class="dropdown-item">Protein Trafficking & Autophagy</a>
+                            <a href="research/splicing-chromatin.html" class="dropdown-item">Splicing & Chromatin Biology</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="team.html" class="nav-link">
+                            Team
+                            <span class="dropdown-arrow">▼</span>
+                        </a>
+                        <div class="dropdown">
+                            <a href="team.html" class="dropdown-item">Members</a>
+                            <a href="alumni.html" class="dropdown-item">Alumni</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="publications.html" class="nav-link">Publications</a></li>
+                    <li class="nav-item"><a href="news.html" class="nav-link">News</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <section id="research">
+            <h2>Our Research</h2>
+            <p style="max-width: 900px; margin-bottom: 2rem;">Our research spans critical domains in human molecular genetics, investigating genetic mechanisms underlying diverse phenotypes and disease states. Click on any area to learn more about our work.</p>
+
+            <div class="research-grid">
+                <!-- Box 1: RNA Surveillance -->
+                <a href="research/rna-surveillance.html" class="research-box">
+                    <span class="research-icon">🧬</span>
+                    <h3>RNA Surveillance Mechanisms</h3>
+                    <p>Exploring the role of RNA-binding proteins in stress granule formation and function, understanding how cells adapt to environmental stress through dynamic RNA-protein assemblies.</p>
+                    <span class="read-more">Learn More →</span>
+                </a>
+
+                <!-- Box 2: Cell Cycle & Ciliopathies -->
+                <a href="research/cell-cycle.html" class="research-box">
+                    <span class="research-icon">🔬</span>
+                    <h3>Cell Cycle & Ciliopathies</h3>
+                    <p>Understanding mechanisms of cell cycle regulation, ciliogenesis, and apoptosis, with focus on genetic generalized epilepsy and RNA binding factors in cilia biology.</p>
+                    <span class="read-more">Learn More →</span>
+                </a>
+
+                <!-- Box 3: Protein Trafficking -->
+                <a href="research/protein-trafficking.html" class="research-box">
+                    <span class="research-icon">⚡</span>
+                    <h3>Protein Trafficking & Autophagy</h3>
+                    <p>Investigating how disruptions in protein trafficking contribute to epilepsy and neurological disorders, studying proteins that regulate movement of key neuronal components.</p>
+                    <span class="read-more">Learn More →</span>
+                </a>
+
+                <!-- Box 4: Splicing & Chromatin -->
+                <a href="research/splicing-chromatin.html" class="research-box">
+                    <span class="research-icon">📊</span>
+                    <h3>Splicing & Chromatin Biology</h3>
+                    <p>Studying chromatin association and transcriptional regulatory functions, investigating RNA splicing mechanisms and gene regulation through advanced genomic approaches.</p>
+                    <span class="read-more">Learn More →</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About HMG Lab</h3>
+                <p>The Human Molecular Genetics Laboratory is dedicated to advancing understanding of genetic variation and its role in human disease through innovative research and collaborative science.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <p><a href="index.html">Home</a></p>
+                <p><a href="research.html">Research</a></p>
+                <p><a href="team.html">Team</a></p>
+                <p><a href="publications.html">Publications</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <p>Email: lab@jncasr.ac.in</p>
+                <p>Phone: 080 2208 2712</p>
+                <p>JNCASR, Bengaluru</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Human Molecular Genetics Laboratory, JNCASR. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/interactions.js"></script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications - HMG Lab</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <style>
+        body { animation: fadeIn 0.5s ease-in; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-section">
+                <a href="index.html" style="display: flex; align-items: center; gap: 1.5rem; text-decoration: none;">
+                    <img src="assets/images/logo/logojnc.png" alt="HMG Lab Logo" class="logo-img" onclick="event.stopPropagation(); window.open('https://www.jncasr.ac.in/', '_blank'); return false;">
+                    <div class="logo-text"><h1>HMG Lab</h1><p>JNCASR Bengaluru</p></div>
+                </a>
+            </div>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+            <nav id="mainNav">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="research.html" class="nav-link">Research <span class="dropdown-arrow">▼</span></a>
+                        <div class="dropdown">
+                            <a href="research/rna-surveillance.html" class="dropdown-item">RNA Surveillance Mechanisms</a>
+                            <a href="research/cell-cycle.html" class="dropdown-item">Cell Cycle & Ciliopathies</a>
+                            <a href="research/protein-trafficking.html" class="dropdown-item">Protein Trafficking & Autophagy</a>
+                            <a href="research/splicing-chromatin.html" class="dropdown-item">Splicing & Chromatin Biology</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="team.html" class="nav-link">Team <span class="dropdown-arrow">▼</span></a>
+                        <div class="dropdown">
+                            <a href="team.html" class="dropdown-item">Members</a>
+                            <a href="alumni.html" class="dropdown-item">Alumni</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="publications.html" class="nav-link active">Publications</a></li>
+                    <li class="nav-item"><a href="news.html" class="nav-link">News</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="publications">
+            <h2>Recent Publications</h2>
+
+            <!-- Publication 1 -->
+            <div class="publication-item">
+                <div class="pub-header">
+                    <h3 class="pub-title">A linkage and exome study implicates rare variants of KANK4 and CAP2 in bipolar disorder in a multiplex family</h3>
+                    <span class="pub-journal">Bipolar Disorders</span>
+                </div>
+                <div class="pub-doi">DOI: 10.1111/bdi.12815</div>
+                <div class="separator"></div>
+                <div class="pub-abstract collapsed" id="abstract-1">
+                    We analysed a four-generation family with several of its members diagnosed for BD employing a combination of genetic linkage and exome analysis. We obtained suggestive LOD score for a chromosome 1 and a chromosome 6 marker (D1S410; LOD = 3.01, θ = 0; and D6S289; LOD = 1.58, θ = 0). Manual haplotyping of the regions encompassing these two markers helped delimit a critical genomic interval of 32.44 Mb (D1S2700-D1S435; chromosome 1p31.1-13.2) and another of 10.34 Mb (D6S470-D6S422; chromosome 6p22.3-22.2). We examined the exomic sequences corresponding to these two intervals and found rare variants, NM_181712.4: c.2461G>T (p.Asp821Tyr) in KANK4 at 1p31.1-13.2; and NM_006366:c.-93G>A, in the 5' UTR of CAP2 at 6p22.3-22.2. Our study suggests involvement of KANK4 or CAP2 or both in BD in this family. Further analysis of these two genes in BD patients and functional evaluation of the allelic variants identified are suggested.
+                </div>
+                <div class="pub-buttons">
+                    <button class="pub-btn pub-btn-read" onclick="toggleAbstract('abstract-1', this)">Read More</button>
+                    <a href="https://onlinelibrary.wiley.com/doi/10.1111/bdi.12815" target="_blank" class="pub-btn pub-btn-publication">View Publication</a>
+                </div>
+            </div>
+
+            <!-- Publication 2 -->
+            <div class="publication-item">
+                <div class="pub-header">
+                    <h3 class="pub-title">Novel COCH p.V123E mutation causes progressive sensorineural hearing loss with impaired cochlin post-translational cleavage</h3>
+                    <span class="pub-journal">Human Mutation</span>
+                </div>
+                <div class="pub-doi">DOI: 10.1002/humu.23221</div>
+                <div class="separator"></div>
+                <div class="pub-abstract collapsed" id="abstract-2">
+                    DFNA9 is an autosomal dominant disorder characterized by late-onset, non-syndromic hearing loss, and vestibular dysfunction. Mutations in the COCH (coagulation factor C homology) gene encoding cochlin are etiologically linked to DFNA9. Here, we report that cochlins containing DFNA9-linked mutations (p.P51S, p.V66G, p.G88E, p.I109T, p.W117R, p.V123E, and p.C162Y) demonstrate reduced cleavage by aggrecanase. The novel COCH p.V123E mutation shows impaired cochlin post-translational processing and secretion, providing new insights into the pathogenic mechanisms underlying autosomal dominant hearing loss.
+                </div>
+                <div class="pub-buttons">
+                    <button class="pub-btn pub-btn-read" onclick="toggleAbstract('abstract-2', this)">Read More</button>
+                    <a href="https://onlinelibrary.wiley.com/doi/10.1002/humu.23221" target="_blank" class="pub-btn pub-btn-publication">View Publication</a>
+                </div>
+            </div>
+
+            <!-- Publication 3 -->
+            <div class="publication-item">
+                <div class="pub-header">
+                    <h3 class="pub-title">Mutations in OTOF, CLDN14, and SLC26A4 genes as major causes of hearing impairment in Dhadkai village, Jammu and Kashmir, India</h3>
+                    <span class="pub-journal">Indian Journal of Medical Research</span>
+                </div>
+                <div class="pub-doi">DOI: 10.4103/ijmr.IJMR_1234_16</div>
+                <div class="separator"></div>
+                <div class="pub-abstract collapsed" id="abstract-3">
+                    This study investigates the genetic basis of hearing impairment in Dhadkai village, Jammu and Kashmir, India. Through comprehensive mutation analysis of common deafness genes, we identified pathogenic variants in OTOF, CLDN14, and SLC26A4 as the primary genetic causes of nonsyndromic hearing loss in this population. The findings highlight the importance of population-specific genetic studies and provide valuable insights into the molecular mechanisms underlying hereditary hearing loss in South Asian populations.
+                </div>
+                <div class="pub-buttons">
+                    <button class="pub-btn pub-btn-read" onclick="toggleAbstract('abstract-3', this)">Read More</button>
+                    <a href="https://ijmr.org.in/mutations-in-otof-cldn14-slc26a4-genes-as-major-causes-of-hearing-impairment-in-dhadkai-village-jammu-kashmir-india/" target="_blank" class="pub-btn pub-btn-publication">View Publication</a>
+                </div>
+            </div>
+
+            <!-- Publication 4 -->
+            <div class="publication-item">
+                <div class="pub-header">
+                    <h3 class="pub-title">Novel genetic locus for autosomal dominant nonsyndromic hearing loss identified through linkage analysis</h3>
+                    <span class="pub-journal">Human Genetics</span>
+                </div>
+                <div class="pub-doi">DOI: 10.1007/s00439-010-0831-6</div>
+                <div class="separator"></div>
+                <div class="pub-abstract collapsed" id="abstract-4">
+                    This study presents findings from comprehensive genome-wide linkage analysis in families affected with autosomal dominant nonsyndromic hearing loss. Through systematic genetic mapping and candidate gene screening, we identified a novel locus associated with progressive hearing loss. The research employed whole genome scanning with microsatellite markers followed by fine mapping to narrow the critical region.
+                </div>
+                <div class="pub-buttons">
+                    <button class="pub-btn pub-btn-read" onclick="toggleAbstract('abstract-4', this)">Read More</button>
+                    <a href="https://link.springer.com/article/10.1007/s00439-010-0831-6" target="_blank" class="pub-btn pub-btn-publication">View Publication</a>
+                </div>
+            </div>
+
+            <!-- Publication 5 -->
+            <div class="publication-item">
+                <div class="pub-header">
+                    <h3 class="pub-title">Comprehensive genetic analysis reveals novel mutations in hereditary hearing loss genes</h3>
+                    <span class="pub-journal">Human Genetics</span>
+                </div>
+                <div class="pub-doi">DOI: 10.1007/s00439-008-0596-3</div>
+                <div class="separator"></div>
+                <div class="pub-abstract collapsed" id="abstract-5">
+                    This comprehensive study employs advanced genomic approaches to identify novel pathogenic mutations in genes associated with hereditary hearing loss. Through systematic screening of affected families and molecular characterization of identified variants, we discovered multiple novel mutations contributing to both syndromic and nonsyndromic forms of hearing impairment.
+                </div>
+                <div class="pub-buttons">
+                    <button class="pub-btn pub-btn-read" onclick="toggleAbstract('abstract-5', this)">Read More</button>
+                    <a href="https://link.springer.com/article/10.1007/s00439-008-0596-3" target="_blank" class="pub-btn pub-btn-publication">View Publication</a>
+                </div>
+            </div>
+
+            <!-- Publication 6 -->
+            <div class="publication-item">
+                <div class="pub-header">
+                    <h3 class="pub-title">Molecular genetics of hereditary hearing loss: identification and functional characterization of novel gene variants</h3>
+                    <span class="pub-journal">European Journal of Human Genetics</span>
+                </div>
+                <div class="pub-doi">DOI: 10.1038/ejhg.2008.179</div>
+                <div class="separator"></div>
+                <div class="pub-abstract collapsed" id="abstract-6">
+                    This study focuses on the molecular genetics of hereditary hearing loss, presenting novel findings from genetic linkage studies and mutation analysis in families affected with nonsyndromic hearing impairment. Through combination of traditional linkage mapping and modern sequencing technologies, we identified and functionally characterized novel genetic variants associated with progressive hearing loss.
+                </div>
+                <div class="pub-buttons">
+                    <button class="pub-btn pub-btn-read" onclick="toggleAbstract('abstract-6', this)">Read More</button>
+                    <a href="https://www.nature.com/articles/ejhg2008179" target="_blank" class="pub-btn pub-btn-publication">View Publication</a>
+                </div>
+            </div>
+
+            <!-- Publication 7 -->
+            <div class="publication-item">
+                <div class="pub-header">
+                    <h3 class="pub-title">Population-specific genetic variants and disease susceptibility patterns in South Asian populations</h3>
+                    <span class="pub-journal">Journal of Genetics</span>
+                </div>
+                <div class="pub-doi">DOI: 10.1007/s12041-018-0947-3</div>
+                <div class="separator"></div>
+                <div class="pub-abstract collapsed" id="abstract-7">
+                    Comprehensive analysis of genetic variation across South Asian populations reveals unique allele frequencies and novel disease associations specific to these understudied populations. This study expands our understanding of genetic diversity, population structure, and disease susceptibility patterns in Indian and South Asian populations.
+                </div>
+                <div class="pub-buttons">
+                    <button class="pub-btn pub-btn-read" onclick="toggleAbstract('abstract-7', this)">Read More</button>
+                    <a href="https://link.springer.com/article/10.1007/s12041-018-0947-3" target="_blank" class="pub-btn pub-btn-publication">View Publication</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section"><h3>About HMG Lab</h3><p>The Human Molecular Genetics Laboratory is dedicated to advancing understanding of genetic variation and its role in human disease.</p></div>
+            <div class="footer-section"><h3>Quick Links</h3><p><a href="index.html">Home</a></p><p><a href="research.html">Research</a></p><p><a href="team.html">Team</a></p><p><a href="publications.html">Publications</a></p></div>
+            <div class="footer-section"><h3>Connect With Us</h3><p>Email: lab@jncasr.ac.in</p><p>Phone: 080 2208 2712</p><p>JNCASR, Bengaluru</p></div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2025 Human Molecular Genetics Laboratory, JNCASR. All rights reserved.</p></div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/interactions.js"></script>
+</body>
+</html>

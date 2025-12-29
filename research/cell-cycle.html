@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cell Cycle & Ciliopathies - HMG Lab</title>
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/layout.css">
+    <link rel="stylesheet" href="../assets/css/animations.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <style>
+        body { animation: fadeIn 0.5s ease-in; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-section">
+                <a href="../index.html" style="display: flex; align-items: center; gap: 1.5rem; text-decoration: none;">
+                    <img src="../assets/images/logo/logojnc.png" alt="HMG Lab Logo" class="logo-img" onclick="event.stopPropagation(); window.open('https://www.jncasr.ac.in/', '_blank'); return false;">
+                    <div class="logo-text"><h1>HMG Lab</h1><p>JNCASR Bengaluru</p></div>
+                </a>
+            </div>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+            <nav id="mainNav">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="../about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="../research.html" class="nav-link active">Research <span class="dropdown-arrow">▼</span></a>
+                        <div class="dropdown">
+                            <a href="rna-surveillance.html" class="dropdown-item">RNA Surveillance Mechanisms</a>
+                            <a href="cell-cycle.html" class="dropdown-item active">Cell Cycle & Ciliopathies</a>
+                            <a href="protein-trafficking.html" class="dropdown-item">Protein Trafficking & Autophagy</a>
+                            <a href="splicing-chromatin.html" class="dropdown-item">Splicing & Chromatin Biology</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="../team.html" class="nav-link">Team <span class="dropdown-arrow">▼</span></a>
+                        <div class="dropdown">
+                            <a href="../team.html" class="dropdown-item">Members</a>
+                            <a href="../alumni.html" class="dropdown-item">Alumni</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="../publications.html" class="nav-link">Publications</a></li>
+                    <li class="nav-item"><a href="../news.html" class="nav-link">News</a></li>
+                    <li class="nav-item"><a href="../contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h2>Cell Cycle & Ciliopathies</h2>
+            
+            <div class="research-detail">
+                <div class="research-text">
+                    <h3>Cell Cycle Regulation</h3>
+                    <p>We are interested in understanding the mechanisms employed by proteins involved in cell cycle regulation, ciliogenesis, apoptosis and their links to pathophysiology of various neurological disorders with a focus on genetic generalized epilepsy. Genetic analysis on cohorts of epileptic and control individuals from the Indian population has yielded a set of clinically relevant mutations which are being assayed through various cellular and animal models for their effects on cell cycle and its links to the brain.</p>
+                </div>
+                <div class="research-image">
+                    <img src="../assets/images/research/cell-cycle.jpg" alt="Cell Cycle Research" onerror="this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;color:#999;font-style:italic;\'>Research Image</div>'">
+                </div>
+            </div>
+
+            <div class="research-detail reverse" style="margin-top: 4rem;">
+                <div class="research-text">
+                    <h3>RNA Binding Factors in Cilia Biology and Ciliopathies</h3>
+                    <p>Cilia are highly specialized organelles essential for numerous cellular functions, including signal transduction, fluid movement, and embryonic development. Defects in the formation or function of cilia lead to a group of disorders collectively known as ciliopathies, often characterized by developmental anomalies affecting multiple organ systems. Recent research has highlighted the emerging role of RNA-binding factors in regulating cilia biogenesis and function.</p>
+
+                    <p>These proteins are crucial for precise RNA processing, particularly alternative splicing of genes essential for ciliogenesis and ciliary signaling. Misregulation or mutations in such factors can disrupt the splicing of ciliary genes, leading to abnormal cilia structure or signaling defects, and ultimately contribute to the pathogenesis of ciliopathies.</p>
+
+                    <p>Understanding the molecular interplay between RNA processing machinery and ciliary pathways offers new insights into the etiology of these complex disorders and opens avenues for potential therapeutic strategies.</p>
+                </div>
+                <div class="research-image">
+                    <img src="../assets/images/research/ciliopathies.jpg" alt="Ciliopathies Research" onerror="this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;color:#999;font-style:italic;\'>Research Image</div>'">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section"><h3>About HMG Lab</h3><p>The Human Molecular Genetics Laboratory is dedicated to advancing understanding of genetic variation and its role in human disease.</p></div>
+            <div class="footer-section"><h3>Quick Links</h3><p><a href="../index.html">Home</a></p><p><a href="../research.html">Research</a></p><p><a href="../team.html">Team</a></p><p><a href="../publications.html">Publications</a></p></div>
+            <div class="footer-section"><h3>Connect With Us</h3><p>Email: lab@jncasr.ac.in</p><p>Phone: 080 2208 2712</p><p>JNCASR, Bengaluru</p></div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2025 Human Molecular Genetics Laboratory, JNCASR. All rights reserved.</p></div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/animations.js"></script>
+    <script src="../assets/js/interactions.js"></script>
+</body>
+</html>

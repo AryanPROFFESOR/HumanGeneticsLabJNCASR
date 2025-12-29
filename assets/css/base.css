@@ -1,0 +1,110 @@
+/* ============================================
+   HMG LAB WEBSITE - BASE STYLES
+   Variables, Resets, Typography, Global Styles
+   ============================================ */
+
+/* ===== CSS VARIABLES ===== */
+:root {
+  --primary-dark: #1a1a1a;
+  --primary-light: #ffffff;
+  --text-dark: #333333;
+  --text-gray: #666666;
+  --border-color: #e0e0e0;
+  --accent: #8B4513;
+  --accent-light: #D4A574;
+  --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ===== RESET & GLOBAL STYLES ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  color: var(--text-dark);
+  background-color: var(--primary-light);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* ===== TYPOGRAPHY ===== */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+  letter-spacing: -0.5px;
+  color: var(--primary-dark);
+}
+
+h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--accent);
+  margin-top: 1rem;
+  border-radius: 2px;
+}
+
+h3 {
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  color: var(--primary-dark);
+}
+
+p {
+  color: var(--text-gray);
+  line-height: 1.8;
+  font-size: 1.05rem;
+  margin-bottom: 1rem;
+}
+
+/* ===== MAIN LAYOUT ===== */
+main {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+section {
+  margin-bottom: 6rem;
+  scroll-margin-top: 100px;
+}
+
+section.hidden {
+  display: none !important;
+}
+
+/* ===== IMAGES ===== */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ===== RESPONSIVE TYPOGRAPHY ===== */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  main {
+    padding: 2rem 1rem;
+  }
+}
